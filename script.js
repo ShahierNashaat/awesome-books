@@ -1,24 +1,24 @@
 let booksArr = [];
 
-function removeBook(bookIndex) {
+const removeBook = (bookIndex) => {
   booksArr = booksArr.filter((book) => book !== booksArr[bookIndex]);
-}
+};
 
-function addBook(bookTitle, bookAuthor) {
+const addBook = (bookTitle, bookAuthor) => {
   const book = {
     title: bookTitle,
     author: bookAuthor,
   };
 
   booksArr.push(book);
-}
+};
 
-function addAwesomeBooksToLocalStorage() {
+const addAwesomeBooksToLocalStorage = () => {
   const booksArrString = JSON.stringify(booksArr);
   localStorage.setItem('awesomeBooks', booksArrString);
-}
+};
 
-function showBooks() {
+const showBooks = () => {
   const booksDiv = document.querySelector('.books');
   booksDiv.innerHTML = '';
   for (let i = 0; i < booksArr.length; i += 1) {
@@ -49,13 +49,13 @@ function showBooks() {
     const lineHr = document.createElement('hr');
     bookDiv.appendChild(lineHr);
   }
-}
+};
 
-function getAwesomeBooksFromLocalStorage() {
+const getAwesomeBooksFromLocalStorage = () => {
   const booksArrString = localStorage.getItem('awesomeBooks');
   booksArr = JSON.parse(booksArrString);
   showBooks();
-}
+};
 
 if (localStorage.getItem('awesomeBooks') == null) {
   addAwesomeBooksToLocalStorage();
