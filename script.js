@@ -1,3 +1,22 @@
+class Book {
+  constructor(title,author){
+    this.title = title;
+    this.author = author;
+  }
+}
+
+class library{
+  constructor(books){
+    this.books = books;
+  }
+  removeBook(bookIndex){
+    this.books = this.books.filter((book) => book != this.books[bookIndex])
+  }
+
+  addBook(book){
+    this.books.push(book);
+  }
+}
 let booksArr = [];
 
 const removeBook = (bookIndex) => {
