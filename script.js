@@ -28,20 +28,20 @@ const addAwesomeBooksToLocalStorage = () => {
 const showBooks = () => {
   const booksDiv = document.querySelector('.books');
   booksDiv.innerHTML = '';
+  if (library.books.length === 0) {
+    booksDiv.style.display = 'none';
+  } else {
+    booksDiv.style.display = 'block';
+  }
   for (let i = 0; i < library.books.length; i += 1) {
     const bookDiv = document.createElement('div');
     bookDiv.classList.add('book');
     booksDiv.appendChild(bookDiv);
 
     const titleParagraph = document.createElement('p');
-    titleParagraph.classList.add('title');
-    titleParagraph.textContent = library.books[i].title;
+    titleParagraph.classList.add('title-author');
+    titleParagraph.textContent = `"${library.books[i].title}" by ${library.books[i].author}`;
     bookDiv.appendChild(titleParagraph);
-
-    const authorParagraph = document.createElement('p');
-    authorParagraph.classList.add('author');
-    authorParagraph.textContent = library.books[i].author;
-    bookDiv.appendChild(authorParagraph);
 
     const removeBtn = document.createElement('button');
     removeBtn.classList.add('remove');
@@ -52,9 +52,6 @@ const showBooks = () => {
       showBooks();
     };
     bookDiv.appendChild(removeBtn);
-
-    const lineHr = document.createElement('hr');
-    bookDiv.appendChild(lineHr);
   }
 };
 
