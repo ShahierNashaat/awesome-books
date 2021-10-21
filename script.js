@@ -1,3 +1,5 @@
+/* eslint-disable no-undef */
+
 const homeLink = document.querySelector('.home');
 
 const listLink = document.querySelector('#list-link');
