@@ -1,3 +1,5 @@
+const { luxon } = require('luxon');
+
 const homeLink = document.querySelector('.home');
 
 const listLink = document.querySelector('#list-link');
@@ -17,12 +19,12 @@ const displayHome = () => {
   listLink.classList.add('active');
   addNewLink.classList.remove('active');
   contactLink.classList.remove('active');
-}
+};
 
 listLink.addEventListener('click', displayHome);
 homeLink.addEventListener('click', displayHome);
 
-addNewLink.addEventListener('click', ()=>{
+addNewLink.addEventListener('click', () => {
   booksListElem.classList.add('display-none');
   addNewBookElem.classList.remove('display-none');
   contactElem.classList.add('display-none');
@@ -31,7 +33,7 @@ addNewLink.addEventListener('click', ()=>{
   contactLink.classList.remove('active');
 });
 
-contactLink.addEventListener('click', ()=>{
+contactLink.addEventListener('click', () => {
   booksListElem.classList.add('display-none');
   addNewBookElem.classList.add('display-none');
   contactElem.classList.remove('display-none');
@@ -126,6 +128,6 @@ const getTime = () => {
   const now = luxon.DateTime.now().toLocaleString(luxon.DateTime.DATETIME_MED_WITH_SECONDS);
   const dateElem = document.querySelector('.display-date');
   dateElem.textContent = now;
-}
+};
 
-const displayTime = setInterval(getTime, 1000);
+setInterval(getTime, 1000);
