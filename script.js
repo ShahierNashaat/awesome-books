@@ -1,4 +1,4 @@
-const { luxon } = require('luxon');
+const { DateTime } = require('https://moment.github.io/luxon/global/luxon.js');
 
 const homeLink = document.querySelector('.home');
 
@@ -125,7 +125,7 @@ addBtn.addEventListener('click', () => {
 });
 
 const getTime = () => {
-  const now = luxon.DateTime.now().toLocaleString(luxon.DateTime.DATETIME_MED_WITH_SECONDS);
+  const now = DateTime.now().toLocaleString(DateTime.DATETIME_MED_WITH_SECONDS);
   const dateElem = document.querySelector('.display-date');
   dateElem.textContent = now;
 };
