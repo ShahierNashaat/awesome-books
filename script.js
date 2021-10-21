@@ -1,3 +1,45 @@
+const homeLink = document.querySelector('.home');
+
+const listLink = document.querySelector('#list-link');
+const addNewLink = document.querySelector('#add-new-link');
+const contactLink = document.querySelector('#contact-link');
+
+const booksListElem = document.querySelector('.list');
+const addNewBookElem = document.querySelector('.add-new');
+const contactElem = document.querySelector('.contact');
+
+listLink.classList.add('active');
+
+const displayHome = () => {
+  booksListElem.classList.remove('display-none');
+  addNewBookElem.classList.add('display-none');
+  contactElem.classList.add('display-none');
+  listLink.classList.add('active');
+  addNewLink.classList.remove('active');
+  contactLink.classList.remove('active');
+}
+
+listLink.addEventListener('click', displayHome);
+homeLink.addEventListener('click', displayHome);
+
+addNewLink.addEventListener('click', ()=>{
+  booksListElem.classList.add('display-none');
+  addNewBookElem.classList.remove('display-none');
+  contactElem.classList.add('display-none');
+  listLink.classList.remove('active');
+  addNewLink.classList.add('active');
+  contactLink.classList.remove('active');
+});
+
+contactLink.addEventListener('click', ()=>{
+  booksListElem.classList.add('display-none');
+  addNewBookElem.classList.add('display-none');
+  contactElem.classList.remove('display-none');
+  listLink.classList.remove('active');
+  addNewLink.classList.remove('active');
+  contactLink.classList.add('active');
+});
+
 class Library {
   books;
 
@@ -15,6 +57,7 @@ class Library {
       author: newBookAuthor,
     };
     this.books.push(book);
+    displayHome();
   }
 }
 
@@ -78,3 +121,11 @@ addBtn.addEventListener('click', () => {
   title.value = '';
   author.value = '';
 });
+
+const getTime = () => {
+  const now = luxon.DateTime.now().toLocaleString(luxon.DateTime.DATETIME_MED_WITH_SECONDS);
+  const dateElem = document.querySelector('.display-date');
+  dateElem.textContent = now;
+}
+
+const displayTime = setInterval(getTime, 1000);

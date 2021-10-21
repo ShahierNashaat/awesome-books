@@ -12,24 +12,61 @@
         <div class="home">Awesome Book</div>
         <div class="nav-list">
             <ul>
-                <li>List</li>
-                <li>Add New</li>
-                <li>Contact</li>
+                <li id="list-link">List</li>
+                <li id="add-new-link">Add New</li>
+                <li id="contact-link">Contact</li>
             </ul>
         </div>
     </nav>
-    <h1>All Awesome Books</h1>
 
-    <div class="books"></div>
+    <main>
+        <section class="date">
+            <div class="display-date"></div>
+        </section>
+        <section class="list">
+            <h1>All Awesome Books</h1>
 
-    <div class="line"></div>
+            <div class="line"></div>
 
-    <div class="add-area">
-        <input name="title" id="title-input" placeholder="Title"> <br>
-        <input name="author" id="author-input" placeholder="Author"> <br>
-        <button type="button" id="add-btn">Add</button>
-    </div>
+            <div class="books"></div>
+        </section>
+
+        <section class="add-new display-none">
+            <h2>Add a new book</h2>
+
+            <div class="line"></div>
+
+            <div class="add-area">
+                <input name="title" id="title-input" placeholder="Title"> <br>
+                <input name="author" id="author-input" placeholder="Author"> <br>
+                <button type="button" id="add-btn">Add</button>
+            </div>
+        </section>
+
+        <section class="contact display-none">
+            <h2>Contact information</h2>
+
+            <div class="line"></div>
+
+            <div class="text-content">
+                <p>
+                    Do you have any question or you just want to say "Hello"?<br>
+                    You can reach out to us!
+                </p>
+                <ul>
+                    <li>Our e-mail mail@mail.com</li>
+                    <li>Our phone number 0043586534422</li>
+                    <li>Our address Streetname 22, 84503 City, Country</li>
+                </ul>
+            </div>
+        </section>
+
+        <footer>
+            <div>Copyright &copy; 2021 all rights reserved.</div>
+        </footer>
+    </main>
     
+    <script src="luxon.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

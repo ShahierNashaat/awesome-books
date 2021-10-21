@@ -1,4 +1,10 @@
-h1 {
+body {
+  position: relative;
+  min-height: 95vh;
+}
+
+h1,
+h2 {
   text-align: center;
 }
 
@@ -95,4 +101,38 @@ nav {
 .nav-list ul li:hover {
   cursor: pointer;
   color: rgb(3, 163, 3);
+}
+
+.date {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 10px;
+}
+
+.display-none {
+  display: none;
+}
+
+.active {
+  color: rgb(3, 163, 3);
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  padding: 20px 0;
+  border: 1px solid black;
+  width: 100%;
+}
+
+footer div {
+  margin-left: 20px;
+}
+
+.contact .text-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
 }
