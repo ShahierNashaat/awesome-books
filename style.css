@@ -1,8 +1,3 @@
-body {
-  position: relative;
-  min-height: 95vh;
-}
-
 h1,
 h2 {
   text-align: center;
@@ -118,8 +113,6 @@ nav {
 }
 
 footer {
-  position: absolute;
-  bottom: 0;
   padding: 20px 0;
   border: 1px solid black;
   width: 100%;
@@ -135,4 +128,10 @@ footer div {
   justify-content: center;
   align-items: center;
   font-size: 25px;
+}
+
+.list,
+.add-new,
+.contact {
+  min-height: 67vh;
 }
