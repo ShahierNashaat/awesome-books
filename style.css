@@ -72,3 +72,27 @@ input {
   border-radius: 4px;
   color: white;
 }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.nav-list ul {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+}
+
+.home:hover {
+  cursor: pointer;
+  color: rgb(3, 163, 3);
+}
+
+.nav-list ul li:hover {
+  cursor: pointer;
+  color: rgb(3, 163, 3);
+}
