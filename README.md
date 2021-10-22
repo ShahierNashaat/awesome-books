@@ -2,17 +2,15 @@
 
 # Project Name
 
-> One paragraph statement about the project.
+> In this project we created a project that allows users to store books with the name of the book and the name of the author.
 
 ![screenshot](./app_screenshot.png)
 
-Additional description about the project and its features.
-
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML&CSS.
+- JavaScript.
+- Browser Developer Tools.
 
 ## Live Demo
 
@@ -21,39 +19,29 @@ Additional description about the project and its features.
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
 To get a local copy up and running follow these simple example steps.
+
+- git clone git@github.com:ShahierNashaat/awesome-books.git
+- cd into awesome-books file
+- Open with Browser or one of the note editor to edit.
 
 ### Prerequisites
 
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
+- Web Browser
 
 ## Authors
 
-👤 **Author1**
+👤 **Shahier Nashaat**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/ShahierNashaat)
+- Twitter: [@twitterhandle](https://twitter.com/ShahierN)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/shahier-nashaat-73519313a/)
 
-👤 **Author2**
+👤 **Orçun Uğur**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/luftedar)
+- Twitter: [@twitterhandle](https://twitter.com/OrcunUgur2)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/orçun-uğur-089148181/)
 
 ## 🤝 Contributing
 
@@ -64,12 +52,6 @@ Feel free to check the [issues page](../../issues/).
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
 
 ## 📝 License
 
