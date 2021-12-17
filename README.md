@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Awesome Books
 
 > In this project we created a project that allows users to store books with the name of the book and the name of the author.
 
